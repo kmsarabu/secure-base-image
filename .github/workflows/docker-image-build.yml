@@ -1,0 +1,17 @@
+name: Call Reusable Docker Build Workflow from vulnerability-scanner
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  call-workflow:
+    uses: kmsarabu/vulnerability-scanner/.github/workflows/docker-image-build.yml@main
+    with:
+      dockerfile-path: './Dockerfile'
