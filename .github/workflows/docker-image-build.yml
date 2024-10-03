@@ -12,6 +12,6 @@ on:
 
 jobs:
   call-workflow:
-    uses: kmsarabu/vulnerability-scanner/.github/workflows/docker-image-build.yml@main
+    uses: kmsarabu/vulnerability-scanner/.github/workflows/docker-image-build.yml@develop
     with:
       dockerfile-path: './Dockerfile'
