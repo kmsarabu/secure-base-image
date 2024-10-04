@@ -15,5 +15,5 @@ jobs:
     uses: kmsarabu/vulnerability-scanner/.github/workflows/docker-image-build.yml@develop
     with:
       dockerfile-path: './Dockerfile'
-      jfrog-url: 'https://kstech.jfrog.io'
-      jfrog-config-token: 'xyz'
+      jfrog-url: ${{ secrets.JF_URL }}
+      jfrog-config-token: ${{ secrets.JF_ACCESS_TOKEN }}
