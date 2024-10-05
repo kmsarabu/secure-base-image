@@ -9,12 +9,6 @@ on:
     branches:
       - main
       - develop
-
-# Set the permissions to access contents and secrets
-permissions:
-  contents: read    # Only read repository contents
-  actions: read     # Read access to GitHub Actions workflows
-  secrets: read     # Read access to secrets
   
 jobs:
   call-workflow:
