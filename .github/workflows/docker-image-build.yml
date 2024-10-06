@@ -15,6 +15,7 @@ jobs:
     uses: kmsarabu/vulnerability-scanner/.github/workflows/docker-image-build.yml@develop
     with:
       dockerfile-path: './Dockerfile'
+      image-name: 'secure-base-image'
     secrets:
       jfrog-url: ${{ secrets.JF_URL }}
       jfrog-config-token: ${{ secrets.JF_ACCESS_TOKEN }}
