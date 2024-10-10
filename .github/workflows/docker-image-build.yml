@@ -18,7 +18,7 @@ jobs:
       image-name: 'secure-base-image'
     secrets:
       jfrog-url: ${{ secrets.JF_URL }}
-      jfrog-config-token: ${{ secrets.JF_ACCESS_TOKEN }}
-      jfrog-ref-token: ${{ secrets.JF_REF_TOKEN }}
-      docker-user: ${{ secrets.DOCKER_USER }}
-      docker-password: ${{ secrets.DOCKER_PASSWORD }}
+      jfrog-user: ${{ secrets.JF_USER }}
+      jfrog-access-token: ${{ secrets.JF_ACCESS_TOKEN }}
+      #docker-user: ${{ secrets.DOCKER_USER }}
+      #docker-password: ${{ secrets.DOCKER_PASSWORD }}
