@@ -20,5 +20,6 @@ jobs:
       jfrog-url: ${{ secrets.JF_URL }}
       jfrog-user: ${{ secrets.JF_USER }}
       jfrog-access-token: ${{ secrets.JF_ACCESS_TOKEN }}
+      jfrog-docker-repo: ${{ secrets.JF_DOCKER_REPO }}
       #docker-user: ${{ secrets.DOCKER_USER }}
       #docker-password: ${{ secrets.DOCKER_PASSWORD }}
